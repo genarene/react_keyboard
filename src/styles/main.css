@@ -1,22 +1,23 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(209, 201, 201);
 }
 
 .keyboard-container {
-  background: #ccc;
+  background-color: rgb(199, 142, 142);
   width: max-content;
-  padding: 0.35rem 2rem;
+  padding: 2rem 2rem;
   border-radius: 0.25em;
   box-shadow: 0 1rem 25px -10px #888;
-  
+
   /*  position keyboard in the middle bottom of screen  */
   position: fixed;
-  bottom: 2rem;
+  bottom: 10rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -37,16 +38,17 @@ button {
   width: 3rem;
   height: 3rem;
   border: none;
+  border-radius: 5px;
 }
 
 button:hover {
-  background-color: #ccc;
+  background-color: rgb(230, 193, 193);
 }
 
 button:active {
-  background-color: #666;
+  background-color: rgb(100, 173, 175);
   color: white;
-} 
+}
 
 /* UTILITY CLASSES */
 .btn-large {
@@ -57,7 +59,6 @@ button:active {
   min-width: 5rem;
   width: 85%;
 }
-
 
 .login-form {
   width: 350px;
@@ -70,11 +71,24 @@ button:active {
   border: 1px solid #bbb;
   border-radius: 1rem;
   gap: 0.25rem;
+  margin-top: 5rem;
+  background-image: linear-gradient(
+    to right bottom,
+    #c8969b,
+    #c08b91,
+    #b88086,
+    #b0757c,
+    #a86a72
+  );
 }
 
 .login-form input {
-  font-family: inherit;
+  font-family: cursive;
   font-size: inherit;
   padding: 10px 15px;
   width: 100%;
+  outline: none;
+  border-radius: 8px;
+  background-color: rgb(221, 215, 215);
+  border-color: rgb(221, 215, 215);
 }
